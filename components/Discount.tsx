@@ -7,8 +7,7 @@ const Discount = () => {
     <div className='w-full min-h-[200px] max-md:max-h-[300px] h-full max-h-[400px] text-center flex flex-col items-center relative' >
         <div className='w-full' >  <Image
       src="/discount.png"
-      width={fill}
-      height={fill}
+      fill={true}
       className='w-full object-cover  min-h-[200px] '
       alt="discount"/></div>
         <div className='absolute left-[5%] max-lg:top-[10%] top-[20%] ' >
