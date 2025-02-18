@@ -4,6 +4,7 @@ import { BiArrowBack } from 'react-icons/bi';
 import { useSwiper } from 'swiper/react';
 import 'swiper/css'
 import 'swiper/css/pagination'
+import Link from 'next/link'
 
 
 
@@ -13,6 +14,7 @@ type ButtonProps = {
     color?: string | '#000';
     width?: string;
     paddingX?: string;
+    link?: string;
     className?: string;
 }
 
@@ -26,7 +28,10 @@ type FormButtonProps = {
 const Button = ({text, icon, color, width, paddingX, className} :ButtonProps) => {
   return (
     <div className='flex items-center ' >
-      <button type='button' className={`${color? color : 'bg-emerald-700' } ${width? width : '' } outline-none border-none flex justify-center ${className} items-center text-xl py-3 ${paddingX? paddingX : 'px-6'} rounded-full text-white hover:bg-opacity-90  my-1 `} >{text} <span className='mx-2 text-xl' >{icon}</span></button>
+        <Link href={link}>
+        <button type='button' className={`${color? color : 'bg-emerald-700' } ${width? width : '' }outline-none border-none flex justify-center ${className} items-center text-xl py-3 ${paddingX? paddingX : 'px-6'} rounded-full text-white hover:bg-opacity-90  my-1 `} >{text} <span className='mx-2 text-xl' >{icon}</span></button>
+        </Link>
+      
       </div>
   )
 }
