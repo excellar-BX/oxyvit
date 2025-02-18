@@ -12,8 +12,8 @@ const Hero = () => {
         <img className='max-w-96 w-full h-72 object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey] ' src="/hero2.png" alt="img_default" />
         <div className='max-w-[350px]  ' >
             <div className='my-2 ' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iure rerum aperiam unde excepturi doloremque expedita, necessitatibus ex dolorum.</div>
-            <Button width='w-[80%] '  text='Explore Now' icon={<BiArrowBack className='rotate-[180deg]' />} />
-            <Button width='w-[80%]' color='bg-[black]' text='Shop Now' />
+            <Button width='w-[80%] ' link="https://wa.link/l2w6s6"  text='Explore Now' icon={<BiArrowBack className='rotate-[180deg]' />} />
+            <Button width='w-[80%]' link="https://wa.link/l2w6s6" color='bg-[black]' text='Shop Now' />
         </div>
         </div>
         <div className="sponsors my-20 ">
