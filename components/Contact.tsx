@@ -11,8 +11,8 @@ const Contact = () => {
       <div className="max-md:w-full w-[40%] flex justify-center ">
          <Image
       src="/contact.png"
-      width={''}
-      height={''}
+      width={fill}
+      height={fill}
       alt="contact"/>
       </div>
       <div className="max-md:w-full w-[40%] mx-auto ">
