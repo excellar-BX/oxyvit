@@ -18,12 +18,42 @@ const Hero = () => {
         </div>
         <div className="sponsors my-20 ">
             <ul className='flex justify-center flex-wrap items-center ' >
-            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' ><img className=' w-full object-cover ' src="/logo1c.png" alt="img_default" /></li>
-            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' ><img className=' w-full object-cover ' src="/logo2c.png" alt="img_default" /></li>
-            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' ><img className=' w-full object-cover ' src="/logo3c.png" alt="img_default" /></li>
-            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' ><img className=' w-full object-cover ' src="/logo4c.png" alt="img_default" /></li>
-            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' ><img className=' w-full object-cover ' src="/logo5c.png" alt="img_default" /></li>
-            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' ><img className=' w-full object-cover ' src="/logo6c.png" alt="img_default" /></li>
+            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' > <Image
+      src="/logo1c.png"
+      width={fill}
+      height={fill}
+       className=' w-full object-cover '
+      alt="img_default" /></li>
+            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' ><Image
+      src="/logo2c.png"
+      width={fill}
+      height={fill}
+       className=' w-full object-cover '
+      alt="img_default" /></li>
+            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' ><Image
+      src="/logo3c.png"
+      width={fill}
+      height={fill}
+       className=' w-full object-cover '
+      alt="img_default" /></li>
+            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' ><Image
+      src="/logo4c.png"
+      width={fill}
+      height={fill}
+       className=' w-full object-cover '
+      alt="img_default" /></li>
+            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' ><Image
+      src="/logo5c.png"
+      width={fill}
+      height={fill}
+       className=' w-full object-cover '
+      alt="img_default" /></li>
+            <li className='w-full max-md:max-w-28 max-w-52 mx-5 list-none ' ><Image
+      src="/logo6c.png"
+      width={fill}
+      height={fill}
+       className=' w-full object-cover '
+      alt="img_default" /></li>
             </ul>
         </div>
     </div>
