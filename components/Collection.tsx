@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import { BiArrowBack } from 'react-icons/bi'
+import Image from 'next/image'
 
 const Collection = () => {
   return (
@@ -10,10 +11,31 @@ const Collection = () => {
             <Button text='Shop now' paddingX='p-10'  icon={<BiArrowBack className='rotate-[180deg]' />} />
         </div>
         <div className="grid max-lg:grid-cols-1 grid-cols-2 gap-10  max-md:mx-5 mx-20 mb-20 ">
-        <div className='w-full relative ' ><img className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/men.png" alt="" /><span className="absolute bottom-10 mx-10 text-xl text-white ">Men's collection</span></div>
-        <div className='w-full relative ' ><img className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/women.png" alt="" /><span className="absolute top-10 mx-10 text-xl text-white ">Women's collection</span></div>
-        <div className='w-full relative ' ><img className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/children.png" alt="" /><span className="absolute top-10 right-10 mx-10 text-xl text-black ">Children's collection</span></div>
-        <div className='w-full relative ' ><img className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/specials.png" alt="" /><span className="absolute bottom-10 right-10 text-xl text-white ">Specials</span></div>
+        <div className='w-full relative ' > <Image
+      src="/men.png"
+      width={''}
+      height={''}
+      className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]'
+      alt="collection1"/>
+                                              <span className="absolute bottom-10 mx-10 text-xl text-white ">Men's collection</span></div>
+        <div className='w-full relative ' ><Image
+      src="/women.png"
+      width={''}
+      height={''}
+      className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]'
+      alt="collection2"/><span className="absolute top-10 mx-10 text-xl text-white ">Women's collection</span></div>
+        <div className='w-full relative ' ><Image
+      src="/children.png"
+      width={''}
+      height={''}
+      className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]'
+      alt="collection3"/><span className="absolute top-10 right-10 mx-10 text-xl text-black ">Children's collection</span></div>
+        <div className='w-full relative ' ><Image
+      src="/specials.png"
+      width={''}
+      height={''}
+      className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]'
+      alt="collection4"/><span className="absolute bottom-10 right-10 text-xl text-white ">Specials</span></div>
         </div>
     </div>
   )
