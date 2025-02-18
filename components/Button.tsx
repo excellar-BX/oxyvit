@@ -25,7 +25,7 @@ type FormButtonProps = {
   color?: string | 'bg-emerald-700' ,
 }
 
-const Button = ({text, icon, color, width, paddingX, className} :ButtonProps) => {
+const Button = ({text, icon, color, width, paddingX, className, link} :ButtonProps) => {
   return (
     <div className='flex items-center ' >
         <Link href={link}>
