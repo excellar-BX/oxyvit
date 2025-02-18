@@ -14,7 +14,7 @@ const Discount = () => {
         <div className='absolute left-[5%] max-lg:top-[10%] top-[20%] ' >
       <div className='max-lg:text-4xl text-[60px]' >Discount <span className='text-white' >Sale</span></div>
       <div className='max-lg:text-5xl text-[80px] font-semibold' ><span className='text-emerald-500' >30%</span>Off</div>
-    <Button text='Shop Now' className='max-md:scale-75 ' paddingX='px-20' />
+    <Button text='Shop Now' link="https://wa.link/l2w6s6" className='max-md:scale-75 ' paddingX='px-20' />
     </div>
     </div>
   );
