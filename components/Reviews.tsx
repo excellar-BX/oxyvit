@@ -50,7 +50,12 @@ const Reviews = () => {
         {reviewData.map((data, index) => (
       <SwiperSlide key={data.id} >
            <div  className={`py-20 text-center ${active === index ? 'scale-125 ' : 'scale-100'} `} >
-           <div> <img src={data.user_pic} alt="" className=" mx-auto rounded-full w-20 h-20 object-cover " /></div>
+           <div> <Image
+      src={data.user_pic}
+      width={''}
+      height={''}
+      className=" mx-auto rounded-full w-20 h-20 object-cover " 
+      alt="reviews"/></div>
            <div className="user_name text-2xl text-emerald-700 font-semibold my-4 ">{data.user}</div>
            <div className="rewiew text-sm text-gray-600 max-w-[80%] mx-auto italic ">"{data.review}"</div>
            </div>
