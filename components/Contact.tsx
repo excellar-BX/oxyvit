@@ -3,12 +3,17 @@ import Link from "next/link";
 import { BiArrowBack, BiEnvelope, BiGlobe, BiUser } from "react-icons/bi";
 import Input from "./Input";
 import { FormButton } from "./Button";
+import Image from 'next/image'
 
 const Contact = () => {
   return (
     <div id="contact" className="flex flex-row max-md:flex-col max-md:mx-5 items-center my-10">
       <div className="max-md:w-full w-[40%] flex justify-center ">
-        <img src="/contact.png" alt="" />
+         <Image
+      src="/contact.png"
+      width={''}
+      height={''}
+      alt="contact"/>
       </div>
       <div className="max-md:w-full w-[40%] mx-auto ">
         <form action="" className="w-full " >
