@@ -50,7 +50,7 @@ const Reviews = () => {
         {reviewData.map((data, index) => (
       <SwiperSlide key={data.id} >
            <div  className={`py-20 text-center ${active === index ? 'scale-125 ' : 'scale-100'} `} >
-           <div> <Image
+           <div className="relative"> <Image
       src={data.user_pic}
       fill={true}
       className=" mx-auto rounded-full w-20 h-20 object-cover " 
