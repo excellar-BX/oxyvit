@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div id='hero' >
         <div className='max-md:text-4xl max-xl:text-5xl text-6xl leading-[70px] max-xl:max-w-full max-w-[60%] text-center w-fit mx-auto mt-10 max-md:mb-10 mb-20 font-bold  '><q><span className='text-emerald-800' >Fuel</span> Your <span className='text-emerald-800' >Health</span> One <span className='text-emerald-800'>Vitamin</span> At A <span className='text-emerald-800'>Time</span> </q></div>
-        <div className='flex max-md:justify-center max-md:gap-y-5 justify-between max-md:max-w-[90%] max-w-[70%]  mx-auto flex-wrap  items-center ' >
+        <div className='flex max-md:justify-center relative max-md:gap-y-5 justify-between max-md:max-w-[90%] max-w-[70%]  mx-auto flex-wrap  items-center ' >
           
         <Image
       src="/hero1.png"
