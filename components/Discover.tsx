@@ -8,8 +8,7 @@ const Discover = () => {
     <div id='discover' className='relative w-[90%] mx-auto ' >
          <Image
       src="/discover.png"
-      width={''}
-      height={''}
+      fill={true}
            className='w-full object-cover max-md:h-[400px] h-[550px] rounded-3xl  ' 
       alt="discover"/>
         <div className="absolute top-[30%] left-[10%] flex flex-col items-center  ">
