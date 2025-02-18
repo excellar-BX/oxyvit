@@ -6,8 +6,7 @@ const About = () => {
     <div id='about' className='flex max-lg:flex-col flex-row  max-md:mx-5 mx-20 items-center ' >
         <div className='max-lg:w-full w-[50%] h-[50%] object-cover flex justify-center mx-auto ' ><Image
       src="/about.png"
-      width={fill}
-      height={fill}
+      fill={true}
       className='w-[60%] h-full  rounded-full '
       alt="About"
     /></div>
