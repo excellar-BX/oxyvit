@@ -52,8 +52,7 @@ const Reviews = () => {
            <div  className={`py-20 text-center ${active === index ? 'scale-125 ' : 'scale-100'} `} >
            <div> <Image
       src={data.user_pic}
-      width={fill}
-      height={fill}
+      fill={true}
       className=" mx-auto rounded-full w-20 h-20 object-cover " 
       alt="reviews"/></div>
            <div className="user_name text-2xl text-emerald-700 font-semibold my-4 ">{data.user}</div>
