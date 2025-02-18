@@ -8,7 +8,7 @@ import Image from 'next/image'
 const Contact = () => {
   return (
     <div id="contact" className="flex flex-row max-md:flex-col max-md:mx-5 items-center my-10">
-      <div className="max-md:w-full w-[40%] flex justify-center ">
+      <div className="max-md:w-full relative w-[40%] flex justify-center ">
          <Image
       src="/contact.png"
       fill={true}
