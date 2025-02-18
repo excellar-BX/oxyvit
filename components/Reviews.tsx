@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import {Swiper, SwiperSlide, useSwiper} from 'swiper/react'
 import {Pagination, Navigation, Autoplay} from 'swiper/modules'
+import Image from 'next/image'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
@@ -49,7 +50,7 @@ const Reviews = () => {
         {reviewData.map((data, index) => (
       <SwiperSlide key={data.id} >
            <div  className={`py-20 text-center ${active === index ? 'scale-125 ' : 'scale-100'} `} >
-           <div><img src={data.user_pic} alt="" className=" mx-auto rounded-full w-20 h-20 object-cover " /></div>
+           <div> <img src={data.user_pic} alt="" className=" mx-auto rounded-full w-20 h-20 object-cover " /></div>
            <div className="user_name text-2xl text-emerald-700 font-semibold my-4 ">{data.user}</div>
            <div className="rewiew text-sm text-gray-600 max-w-[80%] mx-auto italic ">"{data.review}"</div>
            </div>
