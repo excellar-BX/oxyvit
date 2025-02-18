@@ -13,27 +13,27 @@ const Collection = () => {
         <div className="grid max-lg:grid-cols-1 grid-cols-2 gap-10  max-md:mx-5 mx-20 mb-20 ">
         <div className='w-full relative ' > <Image
       src="/men.png"
-      width={''}
-      height={''}
+      width={fill}
+      height={fill}
       className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]'
       alt="collection1"/>
                                               <span className="absolute bottom-10 mx-10 text-xl text-white ">Men's collection</span></div>
         <div className='w-full relative ' ><Image
       src="/women.png"
-      width={''}
-      height={''}
+      width={fill}
+      height={fill}
       className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]'
       alt="collection2"/><span className="absolute top-10 mx-10 text-xl text-white ">Women's collection</span></div>
         <div className='w-full relative ' ><Image
       src="/children.png"
-      width={''}
-      height={''}
+      width={fill}
+      height={fill}
       className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]'
       alt="collection3"/><span className="absolute top-10 right-10 mx-10 text-xl text-black ">Children's collection</span></div>
         <div className='w-full relative ' ><Image
       src="/specials.png"
-      width={''}
-      height={''}
+      width={fill}
+      height={fill}
       className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]'
       alt="collection4"/><span className="absolute bottom-10 right-10 text-xl text-white ">Specials</span></div>
         </div>
