@@ -13,6 +13,7 @@ const Contact = () => {
   const [email, setEmail] = useState<string>();
   const [phoneNumber, setPhoneNumber] = useState<number>();
   const [message, setMessage] = useState<string>();
+  const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>();
 
   return (
