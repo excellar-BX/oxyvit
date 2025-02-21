@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from 'next/image'
+import sendEmail from "./SendEmail"; // Import the function
 import { BiArrowBack, BiEnvelope, BiGlobe, BiUser } from "react-icons/bi";
 import Input from "./Input";
 import { FormButton } from "./Button";
