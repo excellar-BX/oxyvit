@@ -16,6 +16,26 @@ const Contact = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>();
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      await sendEmail({ firstName, lastName, phone, email, message });
+      setError("Email sent successfully!");
+
+      // Reset form fields
+      setFirstName("");
+      setLastName("");
+      setPhone("");
+      setEmail("");
+      setMessage("");
+    } catch {
+      setError("Failed to send email.");
+    }
+    setLoading(false);
+  };
+
   return (
     <div id="contact" className="flex flex-row max-md:flex-col max-md:mx-5 items-center my-10">
       <div className="max-md:w-full w-[40%] flex justify-center relative ">
