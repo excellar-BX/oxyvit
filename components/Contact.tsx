@@ -11,7 +11,7 @@ const Contact = () => {
   const [firstName, setFirstName] = useState<string>();
   const [lastName, setLastName] = useState<string>();
   const [email, setEmail] = useState<string>();
-  const [phoneNumber, setPhoneNumber] = useState<number>();
+  const [phone, setPhone] = useState<number>();
   const [message, setMessage] = useState<string>();
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>();
