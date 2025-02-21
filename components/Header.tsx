@@ -56,7 +56,7 @@ const Header = () => {
             ></OutsideClickHandler>
             </div>
         <div
-          className={`left-side-wrapper w-[80%] max-2xl:w-fit ${
+          className={`left-side-wrapper z-[9999] w-[80%] max-2xl:w-fit ${
             navOpen
               ? "scale-y-100 max-[400px]:scale-75 max-sm:translate-x-5 max-2xl:translate-x-0"
               : "max-2xl:scale-y-0 scale-100 max-2xl:translate-x-40"
