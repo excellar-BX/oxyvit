@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import Image from 'next/image'
 import { BiArrowBack, BiEnvelope, BiGlobe, BiUser } from "react-icons/bi";
 import Input from "./Input";
 import { FormButton } from "./Button";
-import Image from 'next/image'
 
 const Contact = () => {
+
+  const [firstName, setFirstName] = useState<string>();
+  const [lastName, setLastName] = useState<string>();
+  const [email, setEmail] = useState<string>();
+  const [phoneNumber, setPhoneNumber] = useState<number>();
+  const [message, setMessage] = useState<string>();
+  const [error, setError] = useState<string>();
+
   return (
     <div id="contact" className="flex flex-row max-md:flex-col max-md:mx-5 items-center my-10">
-      <div className="max-md:w-full relative w-[40%] flex justify-center ">
-         <Image
-      src="/contact.png"
-      fill={true}
-      alt="contact"/>
+      <div className="max-md:w-full w-[40%] flex justify-center relative ">
+        <Image width={500} height={400} src="/contact.png" alt="" />
       </div>
       <div className="max-md:w-full w-[40%] mx-auto ">
         <form action="" className="w-full " >
@@ -32,6 +37,7 @@ const Contact = () => {
             </span>{" "}
           </div>
           <div className="flex flex-row max-lg:flex-col">
+            <div className="text-sm text-[red]" >{error}</div>
             <div className="max-lg:w-full w-[50%]">
               <Input
                 type="text"

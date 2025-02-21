@@ -1,10 +1,10 @@
 "use client";
 import React, { ReactNode } from 'react'
+import Link from 'next/link'
 import { BiArrowBack } from 'react-icons/bi';
 import { useSwiper } from 'swiper/react';
 import 'swiper/css'
 import 'swiper/css/pagination'
-import Link from 'next/link'
 
 
 
@@ -14,8 +14,8 @@ type ButtonProps = {
     color?: string | '#000';
     width?: string;
     paddingX?: string;
-    link?: string;
     className?: string;
+    link?: string | 'https://wa.link/l2w6s6';
 }
 
 type FormButtonProps = {
@@ -27,14 +27,11 @@ type FormButtonProps = {
 
 const Button = ({text, icon, color, width, paddingX, className, link} :ButtonProps) => {
   return (
-    <div className='flex items-center ' >
-        <Link href={link ?? "#"}> {/* Provide a default value to prevent errors */}
-  <button type='button' className={`${color ?? 'bg-emerald-700'} ${width ?? ''} outline-none border-none flex justify-center ${className} items-center text-xl py-3 ${paddingX ?? 'px-6'} rounded-full text-white hover:bg-opacity-90 my-1`}>
-    {text} <span className='mx-2 text-xl'>{icon}</span>
-  </button>
-</Link>
-      
-      </div>
+    <div  >
+      <Link href={link ?? ""} className='flex items-center ' > 
+       <button type='button' className={`${color? color : 'bg-emerald-700' } ${width? width : '' } outline-none border-none flex justify-center ${className} items-center text-xl py-3 ${paddingX? paddingX : 'px-6'} rounded-full text-white hover:bg-opacity-90  my-1 `} >{text} <span className='mx-2 text-xl' >{icon}</span></button>
+      </Link>
+     </div>
   )
 }
 

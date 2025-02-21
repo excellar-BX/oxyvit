@@ -18,9 +18,9 @@ const Header = () => {
 
   return (
     <div className="flex flex-row border-b-2 h-20 items-center justify-between px-5 sm:px-20 border-black border-opacity-30">
-      <div className="text-4xl w-[10%] font-semibold hover:cursor-pointer ">
+      <div className="text-4xl max-sm:text-2xl w-[10%] font-semibold hover:cursor-pointer ">
         <Link href={"/"}>
-          <span className="text-5xl font-bold text-emerald-700">O</span>xyvit
+          <span className="text-5xl max-sm:text-3xl font-bold text-emerald-700">O</span>xyvit
         </Link>
       </div>
 
@@ -33,7 +33,7 @@ const Header = () => {
           }}
         >
           {""}
-          <BiMenuAltRight className="text-5xl max-2xl:block hidden" />
+          <BiMenuAltRight className="text-5xl max-sm:text-3xl max-2xl:block hidden" />
         </button>
       ) : (
         <button
@@ -45,7 +45,7 @@ const Header = () => {
         >
           {" "}
           {""}
-          <BiX className="text-5xl max-2xl:block hidden" />
+          <BiX className="text-5xl max-sm:text-3xl max-2xl:block hidden" />
         </button>
       )}
       <div className="hidden" >
@@ -58,7 +58,7 @@ const Header = () => {
         <div
           className={`left-side-wrapper w-[80%] max-2xl:w-fit ${
             navOpen
-              ? "scale-y-100 max-[400px]:scale-75 max-2xl:translate-x-0"
+              ? "scale-y-100 max-[400px]:scale-75 max-sm:translate-x-5 max-2xl:translate-x-0"
               : "max-2xl:scale-y-0 scale-100 max-2xl:translate-x-40"
           } duration-500 flex flex-row items-center max-2xl:flex-col max-2xl:absolute max-[400px]:right-0 max-2xl:right-10 right-0 top-0 static max-[400px]:top-10 max-2xl:top-20 max-2xl:bg-emerald-800 rounded-xl max-2xl:py-5  max-2xl:text-white justify-evenly max-2xl:px-2  `}
         >
