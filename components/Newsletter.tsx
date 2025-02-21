@@ -13,11 +13,7 @@ const Newsletter = () => {
       <div className="max-sm:text-3xl text-5xl font-bold leading-[70px] text-white text-center " >Subscribe to Our Newsletter</div>
       <div className="flex justify-center my-10 " >
       <div className="flex bg-white mx-3 lg:w-[50%] h-[40px] rounded-full " >
-      <input
-                type="email"
-                placeholder="i.e 123@example.com"
-                required={true}
-              />
+      <input type="text" className="w-[80%] placeholder:text-sm outline-none border-none h-full px-4 rounded-full " placeholder="Email address" />
         <div className="btn bg-emerald-700 h-full flex text-center rounded-full items-center px-5 text-white cursor-pointer ">Subscribe</div>
       </div>
       </div>
