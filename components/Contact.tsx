@@ -42,7 +42,7 @@ const Contact = () => {
         <Image width={500} height={400} src="/contact.png" alt="" />
       </div>
       <div className="max-md:w-full w-[40%] mx-auto ">
-        <form action="" className="w-full " >
+        <form onSubmit={handleSubmit} className="w-full " >
           <div className="text-2xl my-10  w-[30%] font-semibold hover:cursor-pointer ">
             <Link href={"/"}>
               <span className="text-3xl font-bold text-emerald-700">O</span>
@@ -62,6 +62,8 @@ const Contact = () => {
             <div className="max-lg:w-full w-[50%]">
               <Input
                 type="text"
+                value={firstName} 
+                onChange={(e) => setFirstName(e.target.value)}
                 label="Firstname"
                 placeholder="i.e Gbenga"
                 required={true}
