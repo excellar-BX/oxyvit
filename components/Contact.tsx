@@ -59,7 +59,6 @@ const Contact = () => {
             </span>{" "}
           </div>
           <div className="flex flex-row max-lg:flex-col">
-            <div className="text-sm text-[red]" >{error}</div>
             <div className="max-lg:w-full w-[50%]">
               <Input
                 type="text"
@@ -101,7 +100,9 @@ const Contact = () => {
             <label htmlFor="message" className="font-semibold" >Message</label>
             <textarea  placeholder="Enter your message here" id="message" className="w-full mt-2 max-h-40 rounded-3xl p-5 bg-emerald-700 placeholder:text-black placeholder:text-opacity-50 bg-opacity-20 outline-none border-none border-[grey] border-2 " maxLength={1000} ></textarea>
           </div>
-          <FormButton value="Submit" type="submit" icon={<BiArrowBack className='rotate-180' />} />
+          <FormButton value= {loading ? "Sending..." : "Send Email"} type="submit" icon={<BiArrowBack className='rotate-180' />} />
+          
+            <div className="text-sm my-2 text-[red]" >{error}</div>
         </form>
       </div>
     </div>
