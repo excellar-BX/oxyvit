@@ -7,7 +7,7 @@ type InputProps = {
     placeholder:string,
     required?: boolean,
     value?: string,
-    onChange?: object,
+    onChange?: () => void,
 }
 
 const Input = ({label,type, icon, placeholder, required, value, onChange}:InputProps) => {
