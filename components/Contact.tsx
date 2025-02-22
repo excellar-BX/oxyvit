@@ -73,6 +73,9 @@ const Contact = () => {
             <div className="max-lg:w-full w-[50%]">
               <Input
                 type="text"
+                value={lastName} 
+                onChange={(e) => setLastName(e.target.value)}
+               
                 label="Lastname"
                 placeholder="i.e Favours"
                 required={true}
@@ -84,6 +87,9 @@ const Contact = () => {
           <Input
                 type="email"
                 label="Email Address"
+            value={email} 
+                onChange={(e) => setEmail(e.target.value)}
+               
                 placeholder="i.e 123@example.com"
                 required={true}
                 icon={<BiEnvelope/>}
@@ -93,6 +99,9 @@ const Contact = () => {
           <Input
                 type="text"
                 label="Phone Number"
+            value={phone} 
+                onChange={(e) => setPhone(e.target.value)}
+               
                 placeholder="i.e 123-456-789-0"
                 required={true}
                 icon={<BiGlobe/>}
@@ -100,7 +109,9 @@ const Contact = () => {
           </div>
           <div>
             <label htmlFor="message" className="font-semibold" >Message</label>
-            <textarea  placeholder="Enter your message here" id="message" className="w-full mt-2 max-h-40 rounded-3xl p-5 bg-emerald-700 placeholder:text-black placeholder:text-opacity-50 bg-opacity-20 outline-none border-none border-[grey] border-2 " maxLength={1000} ></textarea>
+            <textarea value={message} 
+                onChange={(e) => setMessage(e.target.value)}
+                 placeholder="Enter your message here" id="message" className="w-full mt-2 max-h-40 rounded-3xl p-5 bg-emerald-700 placeholder:text-black placeholder:text-opacity-50 bg-opacity-20 outline-none border-none border-[grey] border-2 " maxLength={1000} ></textarea>
           </div>
           <FormButton value= {loading ? "Sending..." : "Send Email"} type="submit" icon={<BiArrowBack className='rotate-180' />} />
           
