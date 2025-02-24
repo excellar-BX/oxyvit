@@ -24,6 +24,7 @@ type FormButtonProps = {
   value: string,
   icon?: ReactNode,
   color?: string | 'bg-emerald-700' ,
+  onClick?: () => void; // Adding the onClick prop
 }
 
 const Button = ({text, icon, color, width, paddingX, className, link, onClick} :ButtonProps) => {
@@ -54,11 +55,11 @@ export const SwiperNavButton = () => {
 
 
 
-export const FormButton = ({type, value, icon, color}:FormButtonProps) => {
+export const FormButton = ({type, value, icon, color,onClick }:FormButtonProps) => {
 
   return (
     <div className='' >
-      <button className={`${color? color : 'bg-emerald-700'} w-full h-12 rounded-full flex items-center text-white justify-center my-3 text-xl outline-none border-none `} type={type} >{value} <div className='text-3xl mx-5' > {icon}</div></button>
+      <button onClick={onClick} className={`${color? color : 'bg-emerald-700'} w-full h-12 rounded-full flex items-center text-white justify-center my-3 text-xl outline-none border-none `} type={type} >{value} <div className='text-3xl mx-5' > {icon}</div></button>
     </div>
   )
 }
