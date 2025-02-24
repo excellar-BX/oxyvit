@@ -110,7 +110,7 @@ const Contact = () => {
           <div>
             <label htmlFor="message" className="font-semibold" >Message</label>
             <textarea value={message} 
-                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setMessage(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}
                  placeholder="Enter your message here" id="message" className="w-full mt-2 max-h-40 rounded-3xl p-5 bg-emerald-700 placeholder:text-black placeholder:text-opacity-50 bg-opacity-20 outline-none border-none border-[grey] border-2 " maxLength={1000} ></textarea>
           </div>
           <FormButton value= {loading ? "Sending..." : "Send Email"} type="submit" icon={<BiArrowBack className='rotate-180' />} />
