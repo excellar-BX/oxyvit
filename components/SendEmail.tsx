@@ -11,7 +11,7 @@ type EmailData = {
 
 const sendEmail = async ({ firstName, lastName, phone, email, message }: EmailData) => {
   const serviceID = "service_0qzpxet"; // Your EmailJS Service ID
-  const templateID = "template_iqyuomg"; // Your EmailJS Template ID
+  const templateID = "template_0sw1p94"; // Your EmailJS Template ID
   const publicKey = "cSFYRidCpUYkuslUe"; // Your EmailJS Public Key
 
   const emailData = {
