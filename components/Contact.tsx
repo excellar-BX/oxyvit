@@ -14,6 +14,7 @@ const Contact = () => {
   const [phone, setPhone] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
+  const [success, setSuccess] = useState<string>("");
   const [error, setError] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -22,7 +23,8 @@ const Contact = () => {
 
     try {
       await sendEmail({ firstName, lastName, phone, email, message });
-      setError("Email sent successfully!");
+      setError("");
+      setSuccess("Email Sent Successfully.");
 
       // Reset form fields
       setFirstName("");
@@ -30,8 +32,10 @@ const Contact = () => {
       setPhone("");
       setEmail("");
       setMessage("");
+      setSuccess("Email Sent Successfully.");
     } catch {
       setError("Failed to send email.");
+      setSuccess("");
     }
     setLoading(false);
   };
@@ -116,6 +120,8 @@ const Contact = () => {
           <FormButton value= {loading ? "Sending..." : "Send Email"} type="submit" icon={<BiArrowBack className='rotate-180' />} />
           
             <div className="text-sm my-2 text-[red]" >{error}</div>
+          
+            <div className="text-sm my-2 text-[green]" >{success}</div>
         </form>
       </div>
     </div>
