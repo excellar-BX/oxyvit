@@ -16,6 +16,7 @@ type ButtonProps = {
     paddingX?: string;
     className?: string;
     link?: string | 'https://wa.link/l2w6s6';
+    onClick?: () => void; // Adding the onClick prop
 }
 
 type FormButtonProps = {
@@ -25,11 +26,11 @@ type FormButtonProps = {
   color?: string | 'bg-emerald-700' ,
 }
 
-const Button = ({text, icon, color, width, paddingX, className, link} :ButtonProps) => {
+const Button = ({text, icon, color, width, paddingX, className, link, onClick} :ButtonProps) => {
   return (
     <div  >
       <Link href={link ?? ""} className='flex items-center ' > 
-       <button type='button' className={`${color? color : 'bg-emerald-700' } ${width? width : '' } outline-none border-none flex justify-center ${className} items-center text-xl py-3 ${paddingX? paddingX : 'px-6'} rounded-full text-white hover:bg-opacity-90  my-1 `} >{text} <span className='mx-2 text-xl' >{icon}</span></button>
+       <button onClick={onClick} type='button' className={`${color? color : 'bg-emerald-700' } ${width? width : '' } outline-none border-none flex justify-center ${className} items-center text-xl py-3 ${paddingX? paddingX : 'px-6'} rounded-full text-white hover:bg-opacity-90  my-1 `} >{text} <span className='mx-2 text-xl' >{icon}</span></button>
       </Link>
      </div>
   )
