@@ -13,13 +13,13 @@ const Collection = () => {
         </div>
         <div className="grid max-lg:grid-cols-1 grid-cols-2 gap-10 relative  max-md:mx-5 mx-20 mb-20 ">
         <Link 
-            href="https://wa.link/l2w6s6"><div className='w-full relative ' ><Image width={500} height={450} className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/men.png" alt="" /><span className="absolute bottom-10 mx-10 text-xl text-white ">Men's collection</span></div>
+            href="https://wa.link/r2oi93"><div className='w-full relative ' ><Image width={500} height={450} className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/men.png" alt="" /><span className="absolute bottom-10 mx-10 text-xl text-white ">Men's collection</span></div>
         </Link><Link 
-            href="https://wa.link/l2w6s6"><div className='w-full relative ' ><Image width={500} height={450} className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/women.png" alt="" /><span className="absolute top-10 mx-10 text-xl text-white ">Women's collection</span></div>
+            href="https://wa.link/r2oi93"><div className='w-full relative ' ><Image width={500} height={450} className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/women.png" alt="" /><span className="absolute top-10 mx-10 text-xl text-white ">Women's collection</span></div>
         </Link><Link 
-            href="https://wa.link/l2w6s6"><div className='w-full relative ' ><Image width={500} height={450} className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/children.png" alt="" /><span className="absolute top-10 right-10 mx-10 text-xl text-black max-sm:text-white ">Children's collection</span></div>
+            href="https://wa.link/r2oi93"><div className='w-full relative ' ><Image width={500} height={450} className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/children.png" alt="" /><span className="absolute top-10 right-10 mx-10 text-xl text-black max-sm:text-white ">Children's collection</span></div>
         </Link><Link 
-            href="https://wa.link/l2w6s6"><div className='w-full relative ' ><Image width={500} height={450} className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/specials.png" alt="" /><span className="absolute bottom-10 right-10 text-xl text-white ">Specials</span></div>
+            href="https://wa.link/r2oi93"><div className='w-full relative ' ><Image width={500} height={450} className='w-full max-h-[450px] object-cover rounded-3xl border-spacing-3 border-opacity-10 border border-[grey]' src="/specials.png" alt="" /><span className="absolute bottom-10 right-10 text-xl text-white ">Specials</span></div>
         </Link></div>
     </div>
   )

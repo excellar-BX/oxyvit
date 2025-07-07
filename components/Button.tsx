@@ -15,7 +15,7 @@ type ButtonProps = {
     width?: string;
     paddingX?: string;
     className?: string;
-    link?: string | 'https://wa.link/l2w6s6';
+    link?: string | 'https://wa.link/r2oi93';
     onClick?: () => void; // Adding the onClick prop
 }
 

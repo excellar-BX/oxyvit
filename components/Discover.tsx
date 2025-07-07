@@ -25,7 +25,7 @@ const Discover = () => {
           {" "}
           <Button
             paddingX="max-md:px-5 px-20"
-            link="https://wa.link/l2w6s6"
+            link="https://wa.link/r2oi93"
             text="Explore Now"
             icon={<BiArrowBack className="rotate-[180deg]" />}
           />

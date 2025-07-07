@@ -46,13 +46,13 @@ const Hero = () => {
           <Button
             width="w-[80%] "
             text="Explore Now"
-            link="https://wa.link/l2w6s6"
+            link="https://wa.link/r2oi93"
             icon={<BiArrowBack className="rotate-[180deg]" />}
           />
           <Button
             width="w-[80%]"
             color="bg-[black]"
-            link="https://wa.link/l2w6s6"
+            link="https://wa.link/r2oi93"
             text="Shop Now"
           />
         </div>
